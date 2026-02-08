@@ -47,6 +47,16 @@ body{
   text-align: center;
 }
 
+/* sc19 perf: hint compositor layers for the hero (logo + subtitle) to reduce jank during auto-scroll */
+.hero{ will-change: transform; }
+.hero .badge,
+.hero .logo,
+.hero .subtitle{
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
+}
+
+
 .badge{
   width: var(--brand);
   height: var(--brand);
@@ -3792,4 +3802,20 @@ box-shadow:
     width: 100%;
     pointer-events: none;
   }
+}
+
+/* sc19: disable auto-link styling for phones/emails (iOS/Android) */
+a[x-apple-data-detectors],
+a[x-apple-data-detectors-type],
+a[href^="tel:"],
+a[href^="mailto:"],
+a[href^="sms:"],
+a[href^="facetime:"],
+a[href^="facetime-audio:"]{
+  color: inherit !important;
+  text-decoration: none !important;
+  text-decoration-color: inherit !important;
+  -webkit-text-decoration-color: inherit !important;
+  pointer-events: none !important;
+  cursor: default !important;
 }

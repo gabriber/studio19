@@ -229,20 +229,20 @@ h1{
 /* sc19: phone wiggle (studio header) */
 @keyframes sc19PhoneWiggle{
   0%{ transform: translateX(var(--studio-address-shift)) rotate(0deg); }
-  20%{ transform: translateX(var(--studio-address-shift)) rotate(-20deg); }
-  40%{ transform: translateX(var(--studio-address-shift)) rotate(20deg); }
-  60%{ transform: translateX(var(--studio-address-shift)) rotate(-16deg); }
-  80%{ transform: translateX(var(--studio-address-shift)) rotate(16deg); }
+  20%{ transform: translateX(var(--studio-address-shift)) rotate(-40deg); }
+  40%{ transform: translateX(var(--studio-address-shift)) rotate(40deg); }
+  60%{ transform: translateX(var(--studio-address-shift)) rotate(-32deg); }
+  80%{ transform: translateX(var(--studio-address-shift)) rotate(32deg); }
   100%{ transform: translateX(var(--studio-address-shift)) rotate(0deg); }
 }
 
 /* sc19: address wiggle, double amplitude vs phone */
 @keyframes sc19AddressWiggle{
   0%{ transform: translateX(var(--studio-address-shift)) rotate(0deg); }
-  20%{ transform: translateX(var(--studio-address-shift)) rotate(-40deg); }
-  40%{ transform: translateX(var(--studio-address-shift)) rotate(40deg); }
-  60%{ transform: translateX(var(--studio-address-shift)) rotate(-32deg); }
-  80%{ transform: translateX(var(--studio-address-shift)) rotate(32deg); }
+  20%{ transform: translateX(var(--studio-address-shift)) rotate(-80deg); }
+  40%{ transform: translateX(var(--studio-address-shift)) rotate(80deg); }
+  60%{ transform: translateX(var(--studio-address-shift)) rotate(-64deg); }
+  80%{ transform: translateX(var(--studio-address-shift)) rotate(64deg); }
   100%{ transform: translateX(var(--studio-address-shift)) rotate(0deg); }
 }
 
@@ -279,10 +279,10 @@ h1{
 
 @keyframes sc19MemberSpinY{
   0%{ transform: rotate(0deg); }
-  20%{ transform: rotate(-20deg); }
-  40%{ transform: rotate(20deg); }
-  60%{ transform: rotate(-16deg); }
-  80%{ transform: rotate(16deg); }
+  20%{ transform: rotate(-40deg); }
+  40%{ transform: rotate(40deg); }
+  60%{ transform: rotate(-32deg); }
+  80%{ transform: rotate(32deg); }
   100%{ transform: rotate(0deg); }
 }
 
